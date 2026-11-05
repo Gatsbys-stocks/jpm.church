@@ -359,6 +359,7 @@ html[lang="ne"] .verse blockquote{font-family:var(--f-deva);font-style:normal;li
 .stories a{flex:none;display:grid;justify-items:center;gap:7px;text-decoration:none;scroll-snap-align:start;width:76px}
 .stories .ring{width:72px;height:72px;border-radius:50%;padding:3px;background:conic-gradient(from 200deg,#DC143C,#F1BF00,var(--orange),#003893,#DC143C)}
 .stories .ring img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid var(--surface);background:var(--sand)}
+.stories .ring img.top{object-position:center 22%}
 .stories .ring img.contain{object-fit:contain;padding:6px;background:var(--bg)}
 .stories b{font-size:.76rem;font-weight:600;white-space:nowrap}
 .stories a:hover .ring{transform:scale(1.06)}
@@ -464,6 +465,20 @@ html[lang="ne"] .verse blockquote{font-family:var(--f-deva);font-style:normal;li
 .ckn-more{color:var(--night-fg);font-weight:500;text-underline-offset:3px;padding:10px 6px;white-space:nowrap}
 .ckn-ok{border:0;border-radius:999px;background:var(--orange);color:#fff;font:700 .92rem/1 var(--f-body);padding:13px 20px;min-height:44px;cursor:pointer}
 @media (max-width:720px){.ckn{bottom:calc(80px + env(safe-area-inset-bottom,0px))}.ckn-bt{width:100%;justify-content:space-between}.ckn-ok{flex:1}.site-foot{padding-bottom:28px}.site-foot .wrap{justify-content:center;text-align:center}.fb-logo{flex-direction:column}.fmeta{justify-content:center;flex-direction:column;align-items:center;gap:10px}.fmeta p{text-align:left}}
+/* pastor */
+.pastor-sec{background:var(--sand);color:var(--sand-fg);padding-block:80px}
+.pastor{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.pastor-photo{position:relative;margin:0;justify-self:center;width:min(100%,400px)}
+.pastor-photo > img:first-child{width:100%;height:auto;border-radius:999px 999px 24px 24px;box-shadow:0 30px 50px -28px rgba(40,25,10,.55)}
+.pastor-seal{position:absolute;right:-18px;bottom:28px;width:92px;height:92px;filter:drop-shadow(0 10px 16px rgba(0,0,0,.3))}
+.pastor-copy{min-width:0}
+.pastor-copy h2{font-size:clamp(2rem,4vw,3.1rem);margin:10px 0 8px}
+.pastor-role{font-weight:600;color:var(--orange);margin-bottom:18px!important}
+.pastor-copy p{max-width:52ch;color:color-mix(in srgb,var(--sand-fg) 80%,transparent)}
+.pastor-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.pastor-actions .btn-ghost{color:var(--sand-fg)}
+.pastor-actions .btn-ghost:hover{background:var(--sand-fg);color:var(--sand)}
+@media (max-width:820px){.pastor-sec{padding-block:56px}.pastor{grid-template-columns:1fr;gap:30px;text-align:center}.pastor-photo{width:min(78%,320px)}.pastor-seal{width:72px;height:72px;right:-10px}.pastor-copy p{margin-inline:auto}.pastor-actions{justify-content:center}}
 /* floating whatsapp */
 .wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:8px;background:#1f9d55;color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 12px 28px -8px rgba(0,0,0,.45);transition:transform .2s}
 .wa:hover{transform:translateY(-3px)}
