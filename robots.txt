@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://jpm.daylli9s.site/sitemap.xml

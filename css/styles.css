@@ -475,6 +475,7 @@ html[lang="ne"] .verse blockquote{font-family:var(--f-deva);font-style:normal;li
 .pastor-copy h2{font-size:clamp(2rem,4vw,3.1rem);margin:10px 0 8px}
 .pastor-role{font-weight:600;color:var(--orange);margin-bottom:18px!important}
 .pastor-copy p{max-width:52ch;color:color-mix(in srgb,var(--sand-fg) 80%,transparent)}
+.pastor-copy p + p{margin-top:12px}
 .pastor-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 .pastor-actions .btn-ghost{color:var(--sand-fg)}
 .pastor-actions .btn-ghost:hover{background:var(--sand-fg);color:var(--sand)}
